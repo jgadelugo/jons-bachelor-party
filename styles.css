@@ -1,18 +1,19 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #1D2B64, #4A569D); /* Space blue gradient */
+    background: linear-gradient(to bottom right, #F47321, #005030); /* Miami orange to green gradient */
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    color: #ECEFF4; /* Light silver text */
+    color: #FFFFFF; /* White text for contrast */
+    overflow-x: hidden; /* Prevent horizontal scrolling caused by animations */
 }
 
 /* Navigation Bar */
 nav {
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Black background with transparency */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     z-index: 100;
@@ -32,7 +33,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #B0BEC5; /* Silver text */
+    color: #FFFFFF; /* White text */
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
@@ -40,15 +41,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00A8E8; /* Light cyan hover effect */
-    color: white;
+    background-color: #F47321; /* Miami orange hover effect */
+    color: #005030; /* Green text on hover */
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%); /* Space blue gradient */
+    background: linear-gradient(135deg, #005030 0%, #F47321 100%); /* Green to orange gradient */
     color: white;
     position: relative;
     overflow: hidden;
@@ -71,7 +72,7 @@ header p {
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
-    color: #B0BEC5; /* Silver */
+    color: #FFFFFF; /* White countdown text */
 }
 
 #countdown span {
@@ -79,7 +80,7 @@ header p {
     font-size: 28px;
     margin: 0 10px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.4); /* Black transparent */
+    background-color: rgba(0, 0, 0, 0.3); /* Black transparent */
     border-radius: 8px;
 }
 
@@ -123,13 +124,12 @@ header p {
     transform: translateY(-1200px);
 }
 
-
 /* Section */
 .section {
     margin: 50px auto;
     padding: 40px;
     max-width: 900px;
-    background-color: #2E3440; /* Cool dark space blue */
+    background-color: #005030; /* Miami green section background */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -143,7 +143,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 32px;
-    color: #00A8E8; /* Cyan for modern headings */
+    color: #F47321; /* Miami orange for headings */
     text-shadow: 1px 1px #222;
 }
 
@@ -155,7 +155,7 @@ h2 {
 
 .team {
     padding: 30px;
-    background-color: #B0BEC5; /* Metallic silver team card */
+    background-color: #F47321; /* Miami orange for team cards */
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -165,14 +165,14 @@ h2 {
 }
 
 .team:hover {
-    background-color: #00A8E8; /* Cyan hover effect */
+    background-color: #005030; /* Miami green hover effect */
     color: white;
     transform: scale(1.1);
 }
 
 /* Collapsible */
 .collapsible {
-    background-color: #2E3440; /* Dark blue */
+    background-color: #005030; /* Miami green */
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -187,14 +187,14 @@ h2 {
 }
 
 .collapsible:hover {
-    background-color: #00A8E8; /* Cyan hover */
+    background-color: #F47321; /* Miami orange hover */
 }
 
 .content {
     padding: 10px 18px;
     display: none;
     overflow: hidden;
-    background-color: #ECEFF4; /* Light background */
+    background-color: #FFFFFF; /* White background for content */
     color: #333; /* Dark text */
     border-radius: 8px;
     margin-bottom: 10px;
@@ -209,7 +209,7 @@ h2 {
 footer {
     text-align: center;
     padding: 40px;
-    background-color: #0F2027; /* Dark blue */
+    background-color: #005030; /* Miami green */
     color: white;
     margin-top: 20px;
 }
