@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 content.style.display = "none";
             } else {
                 content.style.display = "block";
+                content.scrollIntoView({ behavior: 'smooth' }); // Added smooth scroll
             }
         });
     });
