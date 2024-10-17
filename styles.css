@@ -105,7 +105,7 @@ header p {
     top: 20px;
     left: -200px;
     width: 150px;
-    animation: fly 6s ease-in-out infinite;
+    animation: fly 20s linear infinite; /* Slowed down to 20s for smooth movement */
 }
 
 #plane2 {
@@ -113,8 +113,8 @@ header p {
     top: 60%;
     right: -200px;
     width: 120px;
-    transform: rotateY(180deg);
-    animation: fly 8s ease-in-out infinite;
+    transform: rotateY(180deg); /* Flips the second plane */
+    animation: fly 22s linear infinite; /* Slower at 22s for variety */
 }
 
 /* Rocket Launch on Scroll */
@@ -123,11 +123,22 @@ header p {
     bottom: -200px;
     right: 50px;
     width: 100px;
-    transition: transform 0.3s ease;
+    transition: transform 2s ease-in-out; /* Smooth and slower transition */
 }
 
 .rocket-launch {
-    transform: translateY(-1200px);
+    transform: translateY(-1200px); /* Rocket will take off upwards */
+}
+
+/* Responsive tweaks for mobile */
+@media (max-width: 768px) {
+    #plane1, #plane2 {
+        width: 80px; /* Smaller planes on mobile */
+    }
+
+    #rocket {
+        width: 80px; /* Smaller rocket on mobile */
+    }
 }
 
 /* Section */
@@ -239,7 +250,7 @@ footer p {
     }
 
     #plane1, #plane2 {
-        width: 80px; /* Reduce the size of the planes */
+        width: 80px; /* Smaller planes on mobile */
     }
 
     #plane1 {
@@ -259,21 +270,7 @@ footer p {
         width: 80%;
         margin-bottom: 20px;
     }
-}
-
-@media (max-width: 600px) {
-    .section {
-        padding: 20px; /* Reduce padding for small screens */
-        max-width: 100%; /* Make the section full width */
-    }
-
-    #countdown span {
-        font-size: 24px; /* Slightly reduce the font size */
-        margin: 5px 8px;
-    }
-
-    .collapsible {
-        font-size: 16px; /* Adjust text size for collapsibles */
-        padding: 15px;
+    #rocket {
+        width: 80px; /* Smaller rocket on mobile */
     }
 }
