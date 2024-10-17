@@ -13,6 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const rocket = document.getElementById('rocket');
+    
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+
+        // Trigger the rocket to "launch" as you scroll down past 400px
+        if (scrollPosition > 400) {
+            rocket.classList.add('rocket-launch');
+        } else {
+            rocket.classList.remove('rocket-launch');
+        }
+    });
+
     // Countdown Timer
     const eventDate = new Date("2024-10-18").getTime();
 

@@ -1,11 +1,11 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #1A374D, #406882); /* Cool blue gradient background */
+    background: linear-gradient(to bottom right, #1D2B64, #4A569D); /* Space blue gradient */
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    color: #F0F0F0; /* Light text for contrast */
+    color: #ECEFF4; /* Light silver text */
 }
 
 /* Navigation Bar */
@@ -14,7 +14,7 @@ nav {
     top: 0;
     background-color: rgba(0, 0, 0, 0.9); /* Black background with transparency */
     padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     z-index: 100;
 }
 
@@ -32,7 +32,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #C0C0C0; /* Silver text */
+    color: #B0BEC5; /* Silver text */
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
@@ -40,17 +40,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #2C6E49; /* Dark green hover effect */
+    background-color: #00A8E8; /* Light cyan hover effect */
     color: white;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #2C6E49 0%, #1A374D 100%); /* Cool blue and green gradient */
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%); /* Space blue gradient */
     color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
 header h1 {
@@ -70,7 +71,7 @@ header p {
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
-    color: #C0C0C0; /* Silver */
+    color: #B0BEC5; /* Silver */
 }
 
 #countdown span {
@@ -82,14 +83,55 @@ header p {
     border-radius: 8px;
 }
 
+/* Plane Animation */
+@keyframes fly {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(120%);
+    }
+}
+
+#plane1 {
+    position: absolute;
+    top: 20px;
+    left: -200px;
+    width: 150px;
+    animation: fly 6s ease-in-out infinite;
+}
+
+#plane2 {
+    position: absolute;
+    top: 60%;
+    right: -200px;
+    width: 120px;
+    transform: rotateY(180deg);
+    animation: fly 8s ease-in-out infinite;
+}
+
+/* Rocket Launch on Scroll */
+#rocket {
+    position: fixed;
+    bottom: -200px;
+    right: 50px;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.rocket-launch {
+    transform: translateY(-1200px);
+}
+
+
 /* Section */
 .section {
     margin: 50px auto;
     padding: 40px;
     max-width: 900px;
-    background-color: #2D4059; /* Cool dark blue section background */
+    background-color: #2E3440; /* Cool dark space blue */
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -101,7 +143,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 32px;
-    color: #76C893; /* Light green heading */
+    color: #00A8E8; /* Cyan for modern headings */
     text-shadow: 1px 1px #222;
 }
 
@@ -113,7 +155,7 @@ h2 {
 
 .team {
     padding: 30px;
-    background-color: #4E9F3D; /* Green team card */
+    background-color: #B0BEC5; /* Metallic silver team card */
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -123,14 +165,14 @@ h2 {
 }
 
 .team:hover {
-    background-color: #406882; /* Cool blue hover effect */
+    background-color: #00A8E8; /* Cyan hover effect */
     color: white;
     transform: scale(1.1);
 }
 
 /* Collapsible */
 .collapsible {
-    background-color: #406882; /* Cool blue */
+    background-color: #2E3440; /* Dark blue */
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -145,14 +187,14 @@ h2 {
 }
 
 .collapsible:hover {
-    background-color: #2C6E49; /* Green hover */
+    background-color: #00A8E8; /* Cyan hover */
 }
 
 .content {
     padding: 10px 18px;
     display: none;
     overflow: hidden;
-    background-color: #F0F0F0; /* Light background */
+    background-color: #ECEFF4; /* Light background */
     color: #333; /* Dark text */
     border-radius: 8px;
     margin-bottom: 10px;
@@ -167,7 +209,7 @@ h2 {
 footer {
     text-align: center;
     padding: 40px;
-    background-color: #1A374D; /* Dark cool blue */
+    background-color: #0F2027; /* Dark blue */
     color: white;
     margin-top: 20px;
 }
