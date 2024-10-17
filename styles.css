@@ -1,18 +1,18 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #F5B041, #EB984E);
+    background: linear-gradient(to bottom right, #1A374D, #406882); /* Cool blue gradient background */
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    color: #333;
+    color: #F0F0F0; /* Light text for contrast */
 }
 
 /* Navigation Bar */
 nav {
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with transparency */
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 100;
@@ -32,7 +32,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #C0C0C0; /* Silver text */
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #E67E22;
+    background-color: #2C6E49; /* Dark green hover effect */
     color: white;
 }
 
@@ -48,7 +48,7 @@ nav ul li a:hover {
 header {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(135deg, #FF5733 0%, #FFC300 100%);
+    background: linear-gradient(135deg, #2C6E49 0%, #1A374D 100%); /* Cool blue and green gradient */
     color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -70,7 +70,7 @@ header p {
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: #C0C0C0; /* Silver */
 }
 
 #countdown span {
@@ -78,7 +78,7 @@ header p {
     font-size: 28px;
     margin: 0 10px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4); /* Black transparent */
     border-radius: 8px;
 }
 
@@ -87,7 +87,7 @@ header p {
     margin: 50px auto;
     padding: 40px;
     max-width: 900px;
-    background-color: #fff;
+    background-color: #2D4059; /* Cool dark blue section background */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -101,8 +101,8 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 32px;
-    color: #FF5733;
-    text-shadow: 1px 1px #ccc;
+    color: #76C893; /* Light green heading */
+    text-shadow: 1px 1px #222;
 }
 
 .team-grid {
@@ -113,7 +113,7 @@ h2 {
 
 .team {
     padding: 30px;
-    background-color: #FFC300;
+    background-color: #4E9F3D; /* Green team card */
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -123,14 +123,14 @@ h2 {
 }
 
 .team:hover {
-    background-color: #FF5733;
+    background-color: #406882; /* Cool blue hover effect */
     color: white;
     transform: scale(1.1);
 }
 
 /* Collapsible */
 .collapsible {
-    background-color: #FF5733;
+    background-color: #406882; /* Cool blue */
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -145,14 +145,15 @@ h2 {
 }
 
 .collapsible:hover {
-    background-color: #E67E22;
+    background-color: #2C6E49; /* Green hover */
 }
 
 .content {
     padding: 10px 18px;
     display: none;
     overflow: hidden;
-    background-color: #FDFEFE;
+    background-color: #F0F0F0; /* Light background */
+    color: #333; /* Dark text */
     border-radius: 8px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -166,7 +167,7 @@ h2 {
 footer {
     text-align: center;
     padding: 40px;
-    background-color: #FF5733;
+    background-color: #1A374D; /* Dark cool blue */
     color: white;
     margin-top: 20px;
 }
