@@ -1,47 +1,136 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #85C1E9, #D6EAF8);
+    background: linear-gradient(to bottom right, #F5B041, #EB984E);
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     color: #333;
 }
 
-/* Countdown Timer */
-#countdown {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 24px;
-    color: #fff;
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
 }
 
-#countdown span {
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
     font-weight: bold;
-    font-size: 32px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #E67E22;
+    color: white;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #2980B9 0%, #6DD5FA 100%);
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #FF5733 0%, #FFC300 100%);
     color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 40px;
-    background-color: #2980B9;
-    color: white;
+header h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+#countdown {
     margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#countdown span {
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Section */
+.section {
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.03);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #FF5733;
+    text-shadow: 1px 1px #ccc;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.team {
+    padding: 30px;
+    background-color: #FFC300;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.team:hover {
+    background-color: #FF5733;
+    color: white;
+    transform: scale(1.1);
 }
 
 /* Collapsible */
 .collapsible {
-    background-color: #5DADE2;
+    background-color: #FF5733;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -55,13 +144,58 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-/* Section */
-.section {
-    margin: 50px auto;
-    padding: 40px;
-    max-width: 900px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+.collapsible:hover {
+    background-color: #E67E22;
 }
 
+.content {
+    padding: 10px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #FDFEFE;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.collapsible.active + .content {
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #FF5733;
+    color: white;
+    margin-top: 20px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
