@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #85C1E9, #D6EAF8);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+/* Countdown Timer */
+#countdown {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+#countdown span {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2980B9 0%, #6DD5FA 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #2980B9;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Collapsible */
+.collapsible {
+    background-color: #5DADE2;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Section */
+.section {
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
