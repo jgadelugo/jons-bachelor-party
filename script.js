@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Countdown Timer
-    const eventDate = new Date("[Insert Date Here]").getTime();
+    const eventDate = new Date("2024-10-18").getTime();
 
     const countdownInterval = setInterval(function() {
         const now = new Date().getTime();
